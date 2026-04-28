@@ -8,6 +8,9 @@ Build-Depends: cmake,
                help2man,
                javahelper,
                nasm,
+			   gnupg,
+			   gpg,
+			   gpgv,
 Rules-Requires-Root: no
 Standards-Version: 4.7.0
 Homepage: https://www.libjpeg-turbo.org/
