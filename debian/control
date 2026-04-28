@@ -1,8 +1,7 @@
 Source: libjpeg-turbo
 Priority: optional
 Section: graphics
-Maintainer: Ondřej Surý <ondrej@debian.org>
-Uploaders: Mike Gabriel <sunweaver@debian.org>
+Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends: cmake,
                debhelper-compat (= 13),
                default-jdk [!hppa !hurd-any !powerpc],
@@ -12,8 +11,8 @@ Build-Depends: cmake,
 Rules-Requires-Root: no
 Standards-Version: 4.7.0
 Homepage: https://www.libjpeg-turbo.org/
-Vcs-Git: https://salsa.debian.org/debian/libjpeg-turbo.git
-Vcs-Browser: https://salsa.debian.org/debian/libjpeg-turbo/
+Vcs-Git: https://github.com/LingmoOS/libjpeg-turbo.git
+Vcs-Browser: https://github.com/LingmoOS/libjpeg-turbo/
 
 Package: libjpeg-dev
 Architecture: any
@@ -44,7 +43,6 @@ Replaces: libjpeg62-dev,
 	  libjpeg7-dev,
 	  libjpeg8-dev,
 	  libjpeg9-dev
-Provides: libjpeg-dev
 Description: Development files for the libjpeg-turbo JPEG library
  The libjpeg-turbo JPEG library is a library for handling JPEG files.
  .
