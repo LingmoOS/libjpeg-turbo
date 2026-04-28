@@ -28,6 +28,11 @@ jobs:
       - name: Install build dependencies
         run: mk-build-deps -i -t "apt-get --yes" -r
 
+      - name: Prepare source
+        run: |
+          wget https://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5.orig.tar.gz \
+            -O ../libjpeg-turbo_2.1.5.orig.tar.gz
+
       - name: Build source package
         run: |
           dpkg-buildpackage -S -us -uc -d
